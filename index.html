@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/mediaqueries.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lacy blog</title>
+</head>
+
+<body>
+
+<!-- Prvá sekcia s ponukou menu - použitý Bootstrap -->
+<section class="bg img-fluid menuu">	
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <a class="navbar-brand logo-link-width" href="#"><img src="img/Lacy-logo.png" alt="logo" class="logo img-fluid"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+	  <div class="collapse navbar-collapse row justify-content-end" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-5">
+		      <li class="nav-item px-3 ">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item px-3">
+		        <a class="nav-link" href="#">Gallery</a>
+		      </li>
+		      <li class="nav-item dropdown px-3">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">Podstránka</a>
+		          <a class="dropdown-item" href="#">Podstránka</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Podstránka</a>
+		        </div>
+		      </li>
+	    </ul>
+	  </div>
+	</nav>
+</section>
+
+<!-- Druhá sekcia s fotkou naľavo a úvodným textom napravo;
+po zmenšení okna sa obrázok posunie pod text, podľa mňa to vyzerá lepšie (d-flex, flex-wrap-reverse)-->
+<section class="row align-items-center section-height d-flex flex-wrap-reverse flex-md-wrap-reverse mx-0">
+	<div class="col-md-6 col-sm-12">
+		<img src="img/Image1.jpg" alt="foto" class="img-fluid order-sm-first">
+	</div>
+	<div class="col-md-4 col-sm-10 offset-1 text text-center order-sm-last">
+		<h1 class="heading mb-3">I'm Lacy!
+		</h1>
+		<p class="lead">You'll notice that this template includes custom hand lettering, so, I have created a bunch of different words that you can use in this template! They will be included with your purchase. Check them out here.
+		</p>
+	</div>
+</section>
+
+<!-- Tretia sekcia s obrázkami použitými ako linky (bez podstránok) -->
+<section class="section_third mx-0">
+	<div class="row justify-content-center">
+		<div class="py-5 text-center col-md-5 col-sm-10">
+			<h2 class="heading mb-4">Photography</h2>
+			<p class="lead font-size text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius dignissim dolor sit amet vehicula. Donec eu posuere dui, in.</p>	
+		</div>
+	</div>
+	<div class="row justify-content-center pb-5 ml-1 ">
+		<div class="col-md-3 col-sm-4 m-3">
+			<a href="#"><img src="img/weddings.png" alt="foto" class="img-fluid"></a>
+		</div>
+		<div class="col-md-3 col-sm-4 m-3">
+			<a href="#"><img src="img/Portraits.png" alt="foto" class="img-fluid"></a>
+		</div>
+		<div class="col-md-3 col-sm-4 m-3">
+			<a href="#"><img src="img/Podcast.png" alt="foto" class="img-fluid"></a>
+		</div>	
+	</div>
+</section>
+
+
+<!-- Štvrtá sekcia s fotografiami - po zúžení okna sa fotky nedajú pod seba, ale zmiznú (display- none) a prepnú sa do slideshow, kde som tiež použila Bootstrap -->
+
+<!-- fotky umiestené vedľa seba: -->
+<section class="row justify-content-center mx-0" id="gallery">
+	<img src="img/blog-horizontal.png" alt="text" class="col-4 m-3" id="horizontal-text">
+	<div class="py-5 justify-content-center pictures mx-0">
+		​<img src="img/blog.png" class="img-fluid  col-lg-2 m-3 picture" alt="Responsive image" id="vertical-text">
+		<img src="img/Photo1.jpg" class="img-fluid col-lg-2 picture col-md-3 m-3" alt="Responsive image">
+		<img src="img/Photo2.jpg" class="img-fluid col-lg-2 picture col-md-3 m-3" alt="Responsive image">
+		<img src="img/Photo3.jpg" class="img-fluid col-lg-2 picture col-md-3 m-3" alt="Responsive image">
+		<img src="img/Photo4.jpg" class="img-fluid col-lg-2 picture col-md-3 m-3 " alt="Responsive image">
+	</div>
+</section>
+
+ <!-- fotky v slideshow -->
+ <section id="slideshow">
+ <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Photo2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Photo3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Photo2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Photo3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section>
+
+<!-- Piata sekcia s formulárom (použitý Bootstrap); 
+	v mobilnej verzii je text podfarbený, aby sa dal ľahšie prečítať (kvôli pozadiu) -->
+<div class="wrapper last-section mx-0">
+<section class="row bg2 mx-0 parallax justify-content-center align-items-center selection-position"> 	
+	<div class="text-center col-12 justify-content-center bg-color div-position m-0 text">	
+		<h1 class="heading">Subscribe!</h1>
+		<p class="lead">Sign up with your email address to receive news and updates.</p>
+
+		<form class="offset-4 col-4 formular">
+		  <div class="form-group row mail">
+		    <label for="staticEmail" class="col-sm-3 col-form-label lablik">Email:</label>
+		    <div class="col-sm-9">
+		     <input type="email" class="form-control" id="inputPassword" placeholder="youremail@gmail.com">
+		      <button type="button" class="btn btn-light my-3">Send</button>
+		   </div>  
+		</form>
+	</div>
+</section>
+</div>
+
+<!-- Pätička -->
+<footer class="row justify-content-center text-center my-0 mx-0 footer">
+	<p class="leadfooter" >Follow @Lacy on Instagram!<br>
+	Website Designed by Big Cat Creative <br>
+	Made by Sarah Kenická</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

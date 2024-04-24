@@ -1,0 +1,150 @@
+@media screen and (max-width: 1070px){
+	#horizontal-text{
+		display: block;
+		margin-left: 40%;
+		width: 500px;
+	}
+	#vertical-text{
+		display: none;
+	}
+	#slideshow{
+		display: block;
+		margin: 20px;
+	}
+	#gallery{
+		display: none;
+	}
+}
+@media screen and (max-width: 325px){
+	.mail{
+		max-width: 200px;
+	}
+}
+@media screen and (max-width: 400px){
+	.heading {
+		font-size: 12px;
+	}
+	.lead {
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 402px){
+	.mail{
+		margin-left: -50px;
+	}
+	.menuu{ /*odsadí navbar od vrchu, pretože sa nalepil na vrch*/
+		padding-top: 10px;
+	}
+
+@media screen and (max-width: 424px){
+	.mail{
+		min-width: 260px;
+		}
+	.lablik {
+		padding: 0;
+	}
+@media screen and (max-width: 440px){
+	.mail{
+		margin-left: -30px;
+	}
+	.leadfooter{
+		font-size: 12px;
+	}
+	.footer {
+		height: 100px;
+	}
+}
+@media screen and (max-width: 370px){
+	.mail{
+		margin-left: -70px;
+	}
+}
+@media screen and (max-width: 475px){
+	.heading {
+		font-size: 15px;
+	}
+	.lead {
+		font-size: 8px;
+	}
+}
+@media screen and (max-width: 500px){
+	.formular{
+		margin-left: 20px;
+	}
+	.bg{
+		background-position: center top;
+		height: calc(112vh);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+}
+@media screen and (max-width: 631px){
+	.heading {
+		font-size: 20px;
+	}
+	.lead {
+		font-size: 10px;
+	}
+	.bg{
+		margin-top: -10px;
+	}
+}
+@media screen and (max-width: 715px){
+	.heading {
+		font-size: 20px;
+	}
+	.lead {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 744px){
+	.text {
+		 padding: 20px;
+	}
+	.pictures{
+		 margin-left: 0;
+	}
+	.formular{
+		margin-left: 20%;
+	}
+}
+@media screen and (max-width: 770px){
+	.text {
+		 padding: 20px;
+	}
+}
+@media screen and (max-width: 805px){
+	.bg {
+		height: calc(100vh);
+		background-position: center top -100px;
+	}
+}
+@media screen and (max-width: 860px){
+	.heading {
+		font-size: 25px;
+	}
+	.lead {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 950px){
+	.bg-color {
+		background-color: #BFBFBF;
+		opacity: 0.9;
+		text-align: center;
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 1009px){
+	.heading {
+		font-size: 30px;
+	}
+	.lead {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 1050px){
+	.mail {
+		width: 300px;
+	}
+}}}

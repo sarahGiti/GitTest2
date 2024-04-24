@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.row {
+	margin-right: 0 !important;
+}
+.logo {
+	width: 100%;
+	height: 20%;
+}
+.logo-link-width {
+	max-width: 20%;
+}
+/* pozícia obrázku na pozadí v piatej sekcii */
+.bg {
+	width: 100%;
+	height: calc(112vh);
+	background-image: url(../img/Photo4.jpg);
+	background-size: cover;
+	background-position: center top -300px;
+	filter: brightness(90%);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.text_margin {
+	margin: 70px 0;
+}
+.heading {
+	font-family: Arial;
+}
+.font-size {
+	font-size: 16px;
+}
+/* pozícia obrázku na pozadí v prvej sekcii */
+.bg2 {
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	height: calc(112vh);
+	background-image: url(../img/Image2.jpg);
+	background-repeat: no-repeat;
+}
+/* tretia sekcia */
+.section_third {
+	background-color: #e4dad0 ;
+}
+/*štvrtá sekcia */
+.section_fourth {
+	background-color: #a5b7bb;
+	width: 100%;
+	height: 50px;
+}
+.picture {
+	object-fit: cover;
+	padding: 0;
+	height: 330px;
+}
+.wrapper {
+	height: 100vh;
+ 	perspective: 2px;
+}
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+.mail{
+	min-width: 290px;
+}
+/*odsadenie formulára (nastavené aj v mediaqueries) */
+.formular{
+	margin-left: 30%;
+}
+/* css poslednej selekcie*/
+.last-selection{
+	background-image: cover;
+	background-size: 150% 150%;
+	min-height: 470px;
+}
+/*text v pätičke*/
+.leadfooter{
+	margin-top: 20px;
+	display: block;
+}
+/*id, ktoré miznú, alebo sa objavujú podľa veľkosti obrazovky*/
+	#gallery{
+		display: block;
+		width: 100%;
+	}
+	#slideshow{
+		display: none;
+	}
+	#horizontal-text{
+		display: none;
+	}
+footer {
+	background-color: #808080;
+	perspective: 2px;
+	padding: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
