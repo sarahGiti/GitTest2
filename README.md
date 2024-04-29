@@ -1,1 +1,1 @@
-Dizajn je inšpirovaný, kód som písala sama s použitím Bootstrapu
+Dizajn je inšpirovaný, kód som písala sama aj s využitím trochou Bootstrapu
